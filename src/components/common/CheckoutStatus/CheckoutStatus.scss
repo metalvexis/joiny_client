@@ -1,0 +1,32 @@
+@import '../../../themeCatalyst.scss';
+
+.checkout-success{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .checkout-message-panel {
+    text-align: center;
+    background-color: $brand-primary;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    svg{
+      width: 35%;
+      height: 35%;
+      color: darken( $brand-info, 10% );
+    }
+    h1 {
+      font-family: merriweather;
+      color: darken( $brand-info, 10% );
+    }
+
+    h3 {
+      color: darken( $brand-info, 10% );
+      font-weight: bold;
+    }
+  }
+  
+}

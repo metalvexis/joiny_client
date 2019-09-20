@@ -1,0 +1,66 @@
+/*
+  Define the global styles in this stylesheet
+
+  Create only a new stylesheet for each Component if totally necessary
+*/
+
+
+$gray-base: #000;
+$gray-darker: lighten($gray-base, 13.5%); // #222
+$gray-dark: lighten($gray-base, 20%);   // #333
+$gray: lighten($gray-base, 33.5%); // #555
+$gray-light: lighten($gray-base, 46.7%); // #777
+$gray-lighter: lighten($gray-base, 93.5%); // #eee
+
+$brand-primary: darken(#FFF387, 6.5%); // #337ab7
+$brand-success: #A6FF7C ;
+$brand-info: #8ADCFF;
+$brand-warning: #FFC98A;
+$brand-danger: #FF8A8A;
+
+.btn-cata-primary {
+  background-color: $brand-primary;
+  color: $gray-dark;
+  &:active, &:hover{
+    background-color: darken($brand-primary,10%);
+  }
+}
+
+.btn-cata-success {
+  background-color: $brand-success;
+  color: $gray-dark;
+  &:active, &:hover{
+    background-color: darken($brand-success,10%);
+  }
+}
+
+.btn-cata-info {
+  background-color: $brand-info;
+  color: $gray-darker;
+  &:active, &:hover{
+    background-color: darken($brand-info,10%);
+  }
+}
+
+.btn-cata-warning {
+  background-color: $brand-warning;
+  color: $gray-darker;
+  &:active, &:hover{
+    background-color: darken($brand-warning,10%);
+  }
+}
+
+.btn-cata-danger {
+  background-color: $brand-danger;
+  color: $gray-dark;
+  &:active, &:hover{
+    background-color: darken($brand-danger,10%);
+  }
+}
+
+// .modal-dialog {
+//   // width: 600px;
+//   .modal-content {
+//     border: solid 3px $brand-info;
+//   }
+// }

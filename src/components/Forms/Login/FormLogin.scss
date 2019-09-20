@@ -1,0 +1,13 @@
+@import "../../../themeCatalyst.scss";
+
+.login-container {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  a {
+    color: darken($brand-danger, 10%);
+    padding-top: 20px;
+    font-size: 18px;
+  }
+}

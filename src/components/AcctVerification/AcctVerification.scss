@@ -1,0 +1,17 @@
+@import "../../themeCatalyst.scss";
+
+.acct-verification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+
+  .verification-panel {
+    padding: 20px;
+    width: 25%;
+    min-width: 300px;
+    max-width: 600px;
+    // min-width: 400px;
+    background-color: $brand-primary;
+  }
+}

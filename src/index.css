@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'merriweather';
+  src: url('./fonts/Merriweather-Regular.ttf'),
+  url('./fonts/Merriweather-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'quicksand';
+  src: url('./fonts/Quicksand-Regular.ttf'),
+  url('./fonts/Quicksand-Bold.ttf');
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

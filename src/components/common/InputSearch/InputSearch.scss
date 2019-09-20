@@ -1,0 +1,23 @@
+@import "../../../themeCatalyst.scss";
+
+.input-search {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+
+  #search-field {
+    display: inline;
+    // max-width: 90%;
+    text-align: center;
+
+    
+  }
+  #overlay-search {
+    position: absolute;
+    right: 2%;
+    // left: 2%;
+    top: 6px;
+    cursor: pointer;
+    color: $brand-info;
+  }
+}

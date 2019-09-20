@@ -1,0 +1,85 @@
+@import "../../themeCatalyst.scss";
+
+.landing {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  // background-color: white;
+}
+
+.landing-panel {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-panel-reverse {
+  flex-direction: row-reverse;  
+  
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 650px;
+  font-size: 30px;
+  padding: 20px;
+
+  #joiner-indicator {
+    margin: 0 auto;
+    width: 155px;
+    height: 100px;
+    background-color: $gray-lighter;
+    border-radius: 10px;
+    img {
+      width: 145px;
+      margin-top: 10px;
+    }
+  }
+  /* flex-wrap: wrap;
+  flex-flow: column;
+  vertical-align: middle;
+  height: 400px;
+  min-height: 250px;
+  max-width: 450px; */
+}
+
+.panel-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 650px;
+  min-height: 400px;
+  padding: 10px;
+
+  #sample-joiner, #sample-friends, #sample-collage {
+    img{
+      max-width: 630px;
+    }
+  }
+
+  &.blue {
+    background-color: lighten($brand-info, 10%);  
+  }
+
+  &.green {
+    background-color: lighten($brand-success, 10%);  
+  }
+
+  &.yellow {
+    background-color: lighten($brand-primary, 10%);  
+  }
+}

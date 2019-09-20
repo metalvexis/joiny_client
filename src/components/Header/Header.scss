@@ -1,0 +1,128 @@
+@import "../../themeCatalyst.scss";
+
+.landing-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  // height: 140px;
+  background-color: $brand-primary;
+}
+
+.header {
+  width: 100%;
+  // height: 110px;
+  position: fixed;
+  background-color: $brand-primary; 
+  padding: 10px;
+
+  
+}
+
+.header-title {
+  width: 100%;
+  text-align: center;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  #title {
+    font-size: 25px;
+    
+    a {
+      color: $gray-base;
+      &:hover{
+        text-decoration: none;
+        // color: $gray-base;
+      }
+    }
+    
+  }
+
+  #subtitle {
+    font-size: 18px;
+  }
+}
+
+#header-controls{
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  #search-control{
+    flex: 7 7 70%;
+  }
+
+  
+  #user-control{
+    font-size: 16px;
+    flex: 3 3 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    #control-bookmark{
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 150px;
+
+      svg{
+        color: darken($brand-info, 10%);
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    #control-profile{
+      cursor: pointer;
+      justify-content: flex-end;
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 150px;
+
+      svg{
+        color: darken($brand-info, 10%);
+        width: 30px;
+        height: 30px;
+      }
+
+      span#acct-unverified{
+        color: darken( $brand-danger, 10% );
+        svg{
+          color: darken( $brand-danger, 10% );
+        }
+        
+      }
+      
+    }
+
+    #control-logout {
+      cursor: pointer;
+      svg {
+        color: $brand-danger;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+  
+.header-links {
+  position: absolute;
+  float: right;
+  // margin-top: 10px;
+  // padding-right: 3%;
+  right: 0;
+  // background-color: $brand-primary;
+  height: 50px;
+  font-size: 18px;
+}

@@ -1,0 +1,23 @@
+@import "../../../themeCatalyst.scss";
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+  padding: 15px;
+  // width: 100vw;
+  max-width: 600px;
+  
+  #redirect-login{
+    // font-family: merriweather;
+    // font-weight: bold;
+    text-align: center;
+    padding: 20px 0px;
+    a {
+      font-size: 18px;
+      color: darken($brand-warning,30%);
+    }
+  }  
+}
+

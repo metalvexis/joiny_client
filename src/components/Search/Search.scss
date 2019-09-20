@@ -1,0 +1,104 @@
+@import "../../themeCatalyst.scss";
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  // padding: auto 5%;
+  padding-top: 30px;
+
+  .search-result {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    // border: 1px solid lightgray;
+  }
+}
+
+.tour-card {
+  background-color: white;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  margin: 8px auto;
+  width: 100%;
+  min-height: 300px;
+  max-width: 800px;
+  border: solid 1px $brand-success;
+  border-radius: 7px;
+
+  button {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    font-family: merriweather;
+    padding: 8px 25px;
+  }
+
+  .left-section {
+    flex: 4 0 40%;
+    min-width: 250px;
+    min-height: 250px;
+    border-radius: inherit;
+    // border: solid 1px blue;
+    
+  }
+
+
+  .right-section {
+    flex: 6 0 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 3px;
+    border-radius: inherit;
+    min-height: 250px;
+    // border: solid 1px red;
+
+    position: relative;
+
+    .tour-card-header {
+      flex-grow: 3;
+      font-size: 28px;
+      font-family: merriweather;
+    }
+
+    .tour-card-slots {
+      font-size: 18px;
+      line-height: 18px;
+      // font-family: merriweather;
+      position: absolute;
+      right: 5px;
+      padding: 4px;
+
+      #joiner-indicator {
+        font-size: 26px;
+
+        img {
+          width: 60px;
+        }
+      }
+    }
+
+    .tour-card-body {
+      flex-grow: 5;
+      font-size: 18px;
+    }
+
+    .tour-card-footer {
+      display: flex;
+      align-items: flex-end;
+
+      flex-grow: 2;
+      font-size: 16px;
+      font-family: merriweather;
+    }
+  }
+}
