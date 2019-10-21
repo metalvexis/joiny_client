@@ -31,7 +31,7 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "proxy": "http://localhost:3000/",
+  "proxy": "https://joinyserver.herokuapp.com",
   "devDependencies": {
     "node-sass": "^4.11.0"
   }
